@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**** End reset ****/
+
+
+:root {
+    --blue: #046C7A;
+    --white: #FFFF;
+    --black: #000000;
+    font-family: "Roboto Condensed", serif;
+    color: var(--white);
+    background-image: url("Images/grind_background1.jpg");
+    background-size: 1500px;
+    
+}
+
+body {
+    margin: 20px;
+    padding: 30px;  
+  
+   
+}
+
+/***** Begin home small screen styles *****/
+
+@media screen and (min-width: 480px) {
+    header {
+        display: flex;
+        text-align: center;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: var(--blue);
+        padding: 10px;
+        margin-bottom: 10px;
+        
+    }
+    
+    nav {
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    nav a{
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        text-align: center;
+        color: var(--white);
+        font-weight: bold;
+        margin: 0.5rem auto;
+        width: calc(100% - 2rem);
+    }
+
+
+    nav ul {
+        list-style:none;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    header img{
+        display: inline-block;
+        margin: 0 auto;
+        width: 200px;
+        height: 100px;
+        border-radius: 3px;
+    }
+
+    h1 {
+        visibility: hidden;
+    }
+
+    main {
+        background-color: var(--blue);
+        padding: 30px;
+        
+    }
+
+    footer {
+        background-color: var(--blue);
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 20px;
+    }
+    
+    a:hover {
+        color: var(--black);
+      }
+    footer a:hover {
+        background-color: var(--black);
+    }
+
+    h2 { 
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    .about  {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+       
+    }
+
+    main img {
+        margin: 0 auto;
+        padding-bottom: 15px;
+
+    }
+    
+/***** End home small screen styles *****/
+
+
+/***** Begin contact small screen styles *****/
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .info {
+        display: grid;
+        grid-template-rows:repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-around;  
+        justify-items: center;  
+    }
+
+    address p, caption {
+        font-size: 20px;
+        margin-top: 15px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    th, td { 
+        padding-right: 10px;
+        padding-bottom: 2px;
+        
+    }
+/***** End contact small screen styles *****/
+
+
+/***** Begin menu small screen styles *****/
+
+    .menu img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+    .menu-pic img {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        width: 60%;
+        padding-top: 20px;
+        padding-bottom: 8px;
+    }
+
+    figcaption {
+        text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    
+    }
+
+    .social p {
+        font-size: 20px;
+    }
+}
+
+/***** End menu small screen styles *****/
+
+
+/***** Begin home large screen styles *****/
+
+@media screen and (min-width: 1080px) {
+    
+    
+
+    header {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--blue);
+        padding: 10px;
+        margin-bottom: 10px;
+        
+    }
+    
+    nav {
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    a:hover {
+        color: var(--black);
+      }
+    footer a:hover {
+        background-color: var(--black);
+    }
+
+
+    nav li {
+        display: inline-block; 
+        width: 150px;
+      }
+    
+    header img{
+        display: inline-block;
+        margin: 0 auto;
+        width: 200px;
+        height: 100px;
+        border-radius: 3px;
+    }
+    
+    h1 {
+        visibility: hidden;
+    }
+    
+    h2 { 
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 20px;
+        text-decoration: underline;
+    }
+    
+    main {
+        background-color: var(--blue);
+        padding: 30px;
+        
+    }
+
+    main p { 
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+    
+    .about  {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+       
+    }
+    
+    
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        padding-bottom: 5px;
+
+    }
+
+    footer {
+        background-color: var(--blue);
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 15px;
+    }
+    
+/***** End home large screen styles *****/
+
+
+/***** Begin contact large screen styles *****/
+
+   
+  
+
+    .info {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        align-items: stretch;
+        justify-items: center;    
+        align-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    address p, caption {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    
+/***** End contact large styles *****/
+
+
+/***** Begin menu large screen styles *****/
+
+.menu img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.menu-pic {
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+
+.menu-pic img {
+    width: 300px;
+    height: 300px;
+}
+
+figcaption {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+/***** End menu styles *****/
+
+}
+
